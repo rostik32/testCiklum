@@ -1,0 +1,56 @@
+.app__table {
+  & td,
+  & th {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  & th {
+    background-color: rgb(235, 235, 235);
+  }
+
+  & tr {
+    border: none;
+  }
+
+  & td {
+    width: 100px;
+
+    &:hover {
+      background-color: rgba(230, 227, 227, 0.39);
+
+      .app__table-delete {
+        display: block;
+      }
+    }
+
+    &.active {
+      position: relative;
+      background-color: rgba(120, 251, 120, 0.39);
+      font-size: 14px;
+    }
+  }
+
+  &-delete {
+    position: absolute;
+    display: none;
+    right: 5px;
+    top: 3px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.app__title {
+  margin: 0;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+}
+
+.app__filter {
+  margin: 0;
+}
